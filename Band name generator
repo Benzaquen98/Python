@@ -1,0 +1,12 @@
+#Band name generator
+#Create greeting message
+print("Welcome to band generator!")
+
+#Create city input
+city = input("which city did you grow up in?\n")
+
+#Create animal input
+animal = input("what is the name of your favourite animal?\n")
+
+#Combine city and animal
+print("the band name generator sugests:" + city + ' ' + animal)
